@@ -2,14 +2,14 @@ import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Healthcare } from './healthcare.js'
 
 $(document).ready(function(){
   $('#weatherLocation').click(function() {
-   let firstName = $('#firstName').val();
-   let lastName = $('#lastName').val();
+   let first_name = $('#first_name').val();
+   let last_name = $('#last_name').val();
    let symptom = $('#symptom').val();
 
-   let promise = // code moved to _weather-service.js_
 
    promise.then(function(response) {
      let body = JSON.parse(response);

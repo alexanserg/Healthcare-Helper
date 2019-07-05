@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="weather-interface.js"></script>
+    <title>Helthcare locator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get information on local doctors that can help!</h1>
+      <label for="first_name">Enter doctors's first name.</label>
+      <input id="first_name" type="text"><br>
+      <label for="last_name">Enter doctor's last name.</label>
+      <input id="last_name" type="text"><br>
+      <label for="symptom">Enter your primary symptom</label>
+      <input id="symptom" type="text"><br>
+
+      <button class="btn-success" id="weatherLocation">Get info on local doctors.</button>
+      <div class="errors"></div>
+      <div class="doctorInfo"></div>
+
+    </div>
+  </body>
+</html>

@@ -2,7 +2,7 @@ export class HealthCare {
   getDoctor() {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      let url = `https://api.betterdoctor.com/2016-03-01/doctors?first_name=${firstName}&last_name=${lastName}&query=${symptom}&location=or-portland&user_location=45.515%2C%20-122.679&skip=0&limit=10&user_key=2cdda81a44d71b558f9b89e9fddc19a0
+      let url = `https://api.betterdoctor.com/2016-03-01/doctors?first_name=${first_name}&last_name=${last_name}&query=${symptom}&location=or-portland&user_location=45.515%2C%20-122.679&skip=0&limit=10&user_key=2cdda81a44d71b558f9b89e9fddc19a0
 `;
       request.onload = function() {
         if (this.status === 200) {
