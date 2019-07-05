@@ -13,8 +13,8 @@ $(document).ready(function(){
 
    promise.then(function(response) {
      let body = JSON.parse(response);
-     $('.showHumidity').text(`The humidity in ${city} is ${body.main.humidity}%`);
-     $('.showTemp').text(`The temperature in Kelvins is ${body.main.temp} degrees.`);
+     $('.doctorInfo').html(`${body.data.profile.first_name} <br> ${body.data.profile.last_name} <br> ${body.data.profile.first_name} ${body.data.visit_address.city}${body.data.visit_address.street1}${body.data.visit_address.street2}${body.data.visit_address.zip}<br> ${body.data.phones[0].number} ${body.data.visit_address.city} `);
+     ;
    }, function(error) {
      $('.showErrors').text(`There was an error processing your request: ${error.message}`);
    });
