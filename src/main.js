@@ -5,8 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function(){
   $('#weatherLocation').click(function() {
-   let city = $('#location').val();
-   $('#location').val("");
+   let firstName = $('#firstName').val();
+   let lastName = $('#lastName').val();
+   let symptom = $('#symptom').val();
 
    let promise = // code moved to _weather-service.js_
 
