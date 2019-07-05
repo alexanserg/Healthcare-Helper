@@ -1,11 +1,11 @@
-#  Website to help intrepid space travellers of the future keep track of their age and life expectancy on multiple planets.
+#  Website to find local doctors.
 
-#### converts earth age and life expectancy to solar years on jupiter, mars, venus, and mercury.
+#### locates doctors in the area based on name or specialty.
 #### By Alexander Sergejev
 
 ## Description
 
-Site to calculate age on Earth, Mars, Venus, Jupiter, and Mercury, as well as life expectancy on each.
+Takes user input names and symptoms to find local healthcare professionals
 
 ## Specs:
 
