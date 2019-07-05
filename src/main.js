@@ -12,13 +12,16 @@ $(document).ready(function(){
     let healthCare = new HealthCare();
     let promise = healthCare.getDoctor();
 
-    console.log('hi');
     promise.then(function(response) {
       let body = JSON.parse(response);
-      $('.doctorInfo').html(`${body.data.practices.profile.first_name} <br> ${body.data.profile.last_name} <br> ${body.data.practices.profile.first_name} ${body.data.practices.visit_address.city}${body.data.practices.visit_address.street1}${body.data.practices.visit_address.street2}${body.data.practices.visit_address.zip}<br> ${body.data.practices.phones[0].number} ${body.data.practices.visit_address.city}`);
+      console.log('hi')
+      $('.doctorInfo').html(`${body}`);
     }, function(error) {
       $('.showErrors').text(`There was an error processing your request: ${error.message}`);
     });
   });
 
 });
+
+//
+// <br> ${body.data.profile.last_name} <br> ${body.data.profile.first_name} ${body.data.practices.visit_address.city}${body.data.practices.visit_address.street1}${body.data.practices.visit_address.street2}${body.data.practices.visit_address.zip}<br> ${body.data.practices.phones[0].number} ${body.data.practices.visit_address.city}
