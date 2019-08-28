@@ -1,11 +1,11 @@
 #  Website to find local doctors.
 
-#### locates doctors in the area based on name or specialty.
+#### locates doctors based on name or specialty.
 #### By Alexander Sergejev
 
 ## Description
 
-Takes user input names and symptoms to find local healthcare professionals
+Takes user input names and symptoms to find a list of healthcare professionals
 
 
 ## Technologies Used
